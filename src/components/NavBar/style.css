@@ -22,7 +22,11 @@
   list-style: none;
   color: var(--color-gray);
   cursor: pointer;
+  font-weight: 500;
   /* font-size: 15px; */
+}
+.action-nav ul li.active{  
+  color: var(--color-black);
 }
 @media screen and (max-width: 900px) {
   .action-nav{

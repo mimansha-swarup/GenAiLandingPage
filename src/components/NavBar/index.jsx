@@ -2,6 +2,7 @@ import React from "react";
 import { FaCaretDown } from "react-icons/fa";
 import "./style.css";
 import Button from "../Button";
+import NavLink from "./NavLink";
 
 const navRoutes = {
   section1: [
@@ -27,7 +28,7 @@ const NavBar = () => {
           {Object.entries(navRoutes)?.map((navSection) => (
             <ul key={navSection[0]}>
               {navSection[1]?.map((navLink) => (
-                <li key={navLink.title}>{navLink.title}</li>
+                <NavLink key={navLink.title} linkObj={navLink} />
               ))}
             </ul>
           ))}

@@ -3,6 +3,9 @@ import { Button, Card } from "../../components";
 import "./style.css";
 import { cardsRecord } from "./helper";
 import { Arc, Star } from "../../assets";
+
+const titleText = "Creative Projects with the ultimate AI-Powered Pattern"
+
 export const LandingPage = () => {
   return (
     <div className="wrapper" >
@@ -12,9 +15,9 @@ export const LandingPage = () => {
         <h4 className="gray-text m-0">Revolutionize your</h4>
         <div className="title">
         <h1 className="sentence">
-        Creative Projects with the ultimate AI-Powered Pattern
+        {titleText}
         </h1>
-          {"Creative Projects with the ultimate AI-Powered Pattern"
+          {titleText
             .split(" ")
             ?.map((el) => (
               <h1 key={el} className="word" >{el}</h1>
