@@ -1,0 +1,26 @@
+.btn, .btn.primary, .btn.secondary, .btn.outlined{
+padding :10px 20px;
+/* height: 40px; */
+border-radius: 5rem;
+border: 2px solid var(--color-black);
+outline: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 0.25rem;
+background-color: inherit;
+/* font-size: .75rem; */
+}
+
+.btn.primary{
+  background-color: var(--color-black);
+  color:var(--color-white); 
+}
+.btn.outlined{
+  border: 2px solid  var(--color-white);
+  color:var(--color-white); 
+}
+.btn.secondary{
+  border: 2px solid var(--color-gray);
+  font-weight: 600;
+}

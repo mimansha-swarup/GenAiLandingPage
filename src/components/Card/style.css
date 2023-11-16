@@ -1,0 +1,29 @@
+.card {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:  1.4rem;
+  z-index: 2;
+}
+.card.card-1 {
+  background: url("../../assets/whiteBg.jpg");
+  background-size: cover;
+}
+.card.card-2 {
+  background: url("../../assets/goldenAbstract2.webp");
+  background-size: cover;
+}
+.card.card-3 {
+  background: url("../../assets/purpleAbstract.png");
+  background-size: cover;
+}
+.tag{
+  padding :8px 16px;
+/* height: 40px; */
+align-self: baseline;
+border-radius: 5rem;
+color:  var(--color-white);
+border: 2px solid var(--color-white);
+background-color: inherit;
+}

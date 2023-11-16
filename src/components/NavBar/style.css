@@ -1,0 +1,36 @@
+.navbar{
+  padding: 0  2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.nav-brand{
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+.action-nav, .action{
+  display: flex;
+  align-items: baseline;
+  gap:  8rem;
+
+  
+}
+.action-nav ul li{
+  
+  list-style: none;
+  color: var(--color-gray);
+  cursor: pointer;
+  /* font-size: 15px; */
+}
+@media screen and (max-width: 900px) {
+  .action-nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar{
+    margin-bottom: 3rem;
+  }
+}

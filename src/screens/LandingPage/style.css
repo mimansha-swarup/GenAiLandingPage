@@ -1,0 +1,155 @@
+.wrapper{
+  position: relative;
+}
+.star-1{
+  position: absolute;
+  width: 25px;
+  opacity: .3;
+  top:-3rem;
+  left: 40%;
+}
+.arc{
+  position: absolute;
+  width: 180px;
+  opacity: .3;
+  top:30%;
+  right: 10%;
+}
+
+.title-container {
+  padding: 0 2rem;
+}
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 65%;
+  gap: 0.5rem;
+}
+.title h1.word {
+  font-size: 4.5rem;
+  margin: 0;
+}
+.title h1.sentence {
+  display: none;
+}
+.title button {
+  font-size: 1rem;
+  margin: 0 0.75rem;
+}
+
+.title-container h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.title h4 strong {
+  font-size: 1.2rem;
+  color: var(--color-black);
+}
+
+.card-layout {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 5rem;
+}
+.card-layout .card {
+  flex: 1;
+}
+.card-layout .card:last-child {
+  flex: 2;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-white);
+  width: 100%;
+}
+
+.metric-cont {
+  color: var(--color-white);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.metric-cont h1 {
+  font-size: 3rem;
+  margin: 0%;
+}
+.metric-cont p {
+  margin: 0%;
+  font-size: 0.75rem;
+}
+.metric-cont .icon {
+  font-size: 1rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    width: 70%;
+  }
+  .title h1.word {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title {
+    width: 80%;
+  }
+  .title h1.word {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card-layout {
+    flex-direction: column;
+  }
+
+  .title h1.word {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .title h1.word {
+    display: none;
+  }
+  .title-container h4 {
+    text-align: center;
+  }
+  .title h1.sentence {
+    display: block;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .title div {
+    order: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .title button {
+    /* font-size: 2rem; */
+    order: 2;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title h1.sentence {
+    font-size: 2rem;
+  }
+}

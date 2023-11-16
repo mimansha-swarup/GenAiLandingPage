@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+* {
+  --color-black: #202032;
+  --color-ghost-white: #f4f6f8;
+  --color-white: #fff;
+  --color-gray: #a0a2a5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--color-ghost-white);
+  color: var(--color-black);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.gray-text {
+  color: var(--color-gray);
+}
+.white-text {
+  color: var(--color-white);
 }
